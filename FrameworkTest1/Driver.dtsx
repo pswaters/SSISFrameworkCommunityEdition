@@ -7,12 +7,12 @@
   DTS:CreatorName="vmSQL14\A. Ray Leonard"
   DTS:DTSID="{F014ED76-F740-457D-8318-8F044378C5B0}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="12.0.2344.23"
+  DTS:LastModifiedProductVersion="15.0.1100.123"
   DTS:LocaleID="1033"
   DTS:ObjectName="Driver"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{0789B77B-9194-4454-8EA2-8B6EC5F08FF6}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{26D989F0-F772-4B7E-A265-2657825D9DF0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="vmSQL14\Demo.SSISDB1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=vmSQL14\Demo;Initial Catalog=SSISDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=(local)\Samples;Initial Catalog=SSISDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -138,6 +138,14 @@
           Size="131,42"
           Id="Package\EPT Child2"
           TopLeft="147,146" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="367.5,65.5" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Execute SQL Task 1"
+          TopLeft="369,149" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="214,93">
@@ -160,14 +168,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="367.5,65.5" />
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Execute SQL Task 1"
-          TopLeft="369,149" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="453,107.5">
